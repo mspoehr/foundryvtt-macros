@@ -22,4 +22,4 @@ DOWNLOAD_URL="https://github.com/mspoehr/foundryvtt-macros/releases/download/$VE
 jq ". + {\"version\": \"$VERSION\", \"manifest\": \"$MANIFEST_URL\", \"download\": \"$DOWNLOAD_URL\"}" module.json > build/module.json
 
 cd build
-zip michaels-macros.zip *
+zip -r michaels-macros.zip *
