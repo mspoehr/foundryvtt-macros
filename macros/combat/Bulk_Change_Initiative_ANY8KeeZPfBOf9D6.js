@@ -1,5 +1,5 @@
 // metadata-name: Bulk Change Initiative
-// metadata-img: macros/change_initiative.png
+// metadata-img: modules/michaels-macros/icons/change_initiative.png
 // end-metadata
 //for the selected tokens, adjust their initiative by X.  Use with selective-select to modify all enemies, friendlies
 

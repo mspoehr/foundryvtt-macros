@@ -1,5 +1,5 @@
 // metadata-name: Shrink Or Enlarge
-// metadata-img: macros/enlarge_or_reduce.png
+// metadata-img: modules/michaels-macros/icons/enlarge_or_reduce.png
 // end-metadata
 // Update selected tokens to flip between a 1x1 or a 2x2 grid.
 

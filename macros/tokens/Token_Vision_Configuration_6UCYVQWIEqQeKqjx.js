@@ -1,5 +1,5 @@
 // metadata-name: Token Vision Configuration
-// metadata-img: macros/vision_config.png
+// metadata-img: modules/michaels-macros/icons/vision_config.png
 // end-metadata
 // // A macro for the Foundry virtual tabletop that lets a user configure their token's vision and lighting settings. 
 
@@ -55,7 +55,7 @@ new Dialog({
   close: html => {
     if (applyChanges) {
       let updates = [];
-      for ( let token of canvas.tokens.controlled ) {
+      for (let token of canvas.tokens.controlled) {
         let visionType = html.find('[name="vision-type"]')[0].value || "none";
         let lightSource = html.find('[name="light-source"]')[0].value || "none";
         let visionMode = token.document.sight.visionMode;
@@ -111,19 +111,19 @@ new Dialog({
           case "none":
             dimLight = 0;
             brightLight = 0;
-            lightAnimation = {type: "none"};
+            lightAnimation = { type: "none" };
             break;
           case "candle":
             dimLight = 10;
             brightLight = 5;
-            lightAnimation = {type: "torch", speed: 2, intensity: 2};
+            lightAnimation = { type: "torch", speed: 2, intensity: 2 };
             lightColor = colorFire;
             lightAlpha = 0.15;
             break;
           case "lamp":
             dimLight = 45;
             brightLight = 15;
-            lightAnimation = {type: "torch", speed: 2, intensity: 2};
+            lightAnimation = { type: "torch", speed: 2, intensity: 2 };
             lightColor = colorFire;
             lightAlpha = 0.15;
             break;
@@ -132,42 +132,42 @@ new Dialog({
             brightLight = 60;
             lockRotation = false;
             lightAngle = 52.5;
-            lightAnimation = {type: "torch", speed: 2, intensity: 2};
+            lightAnimation = { type: "torch", speed: 2, intensity: 2 };
             lightColor = colorFire;
             lightAlpha = 0.15;
             break;
           case "hooded-dim":
             dimLight = 5;
             brightLight = 0;
-            lightAnimation = {type: "torch", speed: 2, intensity: 2};
+            lightAnimation = { type: "torch", speed: 2, intensity: 2 };
             lightColor = colorFire;
             lightAlpha = 0.15;
             break;
           case "hooded-bright":
             dimLight = 60;
             brightLight = 30;
-            lightAnimation = {type: "torch", speed: 2, intensity: 2};
+            lightAnimation = { type: "torch", speed: 2, intensity: 2 };
             lightColor = colorFire;
             lightAlpha = 0.15;
             break;
           case "light":
             dimLight = 40;
             brightLight = 20;
-            lightAnimation = {type: "none"};
+            lightAnimation = { type: "none" };
             lightColor = colorWhite;
             lightAlpha = 0;
             break;
           case "torch":
             dimLight = 40;
             brightLight = 20;
-            lightAnimation = {type: "torch", speed: 2, intensity: 2};
+            lightAnimation = { type: "torch", speed: 2, intensity: 2 };
             lightColor = colorFire;
             lightAlpha = 0.15;
             break;
           case "moon-touched":
             dimLight = 30;
             brightLight = 15;
-            lightAnimation = {type: "none"};
+            lightAnimation = { type: "none" };
             lightColor = colorMoonGlow;
             break;
           case "darkness":
@@ -192,7 +192,7 @@ new Dialog({
           "sight.visionMode": visionMode,
           "sight.range": visionRange,
           "light.dim": dimLight,
-          "light.bright":  brightLight,
+          "light.bright": brightLight,
           "light.angle": lightAngle,
           lockRotation: lockRotation,
           "light.animation": lightAnimation,

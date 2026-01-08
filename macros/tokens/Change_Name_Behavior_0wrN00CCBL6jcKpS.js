@@ -1,5 +1,5 @@
 // metadata-name: Change Name Behavior
-// metadata-img: macros/name_behavior.png
+// metadata-img: modules/michaels-macros/icons/name_behavior.png
 // end-metadata
 const version = 'v1.0';
 
@@ -36,9 +36,9 @@ function main() {
     no: {
       icon: "<i class='fas fa-times'></i>",
       label: `Cancel Changes`
-    }   
-  }  
-  
+    }
+  }
+
   // Main Dialogue    
   new Dialog({
     title: `Token Name - ${version}`,
@@ -54,7 +54,7 @@ async function changeName(html) {
   // Update all tokens on the map so that the name shows on hover and the bars always show.
   // Display Modes: ALWAYS, CONTROL, HOVER, NONE, OWNER, OWNER_HOVER
 
-  switch(nameBehavior) {
+  switch (nameBehavior) {
     case 'NONE':
       nameConst = CONST.TOKEN_DISPLAY_MODES.NONE
       break;
@@ -75,13 +75,13 @@ async function changeName(html) {
       break;
     default:
       nameConst = CONST.TOKEN_DISPLAY_MODES.NONE
-  }  
-  
+  }
+
   const tokens = canvas.tokens.controlled.map(token => {
-  return {
-    _id: token.id,
-    "displayName": nameConst
-  };
+    return {
+      _id: token.id,
+      "displayName": nameConst
+    };
   });
 
   canvas.scene.updateEmbeddedDocuments('Token', tokens)

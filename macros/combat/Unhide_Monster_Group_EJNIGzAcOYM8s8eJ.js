@@ -1,5 +1,5 @@
 // metadata-name: Unhide Monster Group
-// metadata-img: macros/unhide_group.png
+// metadata-img: modules/michaels-macros/icons/unhide_group.png
 // end-metadata
 const currentActorId = game.combat.combatant.actorId;
 const updates = game.combat.turns

@@ -4,6 +4,8 @@ mkdir -p build/packs
 find macros -name "*.json" -type f -exec cp {} ./build/ \;
 rm build/_Folder.json
 
+cp -r icons build/
+
 python3 scripts/js_to_json.py macros build
 
 folders=$(find macros -name _Folder.json)

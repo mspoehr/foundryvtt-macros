@@ -1,5 +1,5 @@
 // metadata-name: Start Combat
-// metadata-img: macros/start_combat.png
+// metadata-img: modules/michaels-macros/icons/start_combat.png
 // end-metadata
 if (game.combat && game.combat.round > 1) {
   ui.notifications.error("Combat is already started, end current combat and try again.")

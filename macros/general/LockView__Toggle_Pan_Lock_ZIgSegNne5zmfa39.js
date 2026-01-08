@@ -1,7 +1,7 @@
 // metadata-name: LockView: Toggle Pan Lock
-// metadata-img: macros/toggle_pan_lock.png
+// metadata-img: modules/michaels-macros/icons/toggle_pan_lock.png
 // end-metadata
-Hooks.call('setLockView',{
+Hooks.call('setLockView', {
   "panLock": ['toggle'],
 })
 
