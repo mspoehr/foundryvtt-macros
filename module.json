@@ -1,0 +1,35 @@
+{
+  "id": "michaels-macros",
+  "title": "Michael's Macros",
+  "license": "MIT License",
+  "description": "<p>This module contains handy macros I use to run foundry vtt games. These may or may not be useful to others. Some macros may depend on the dnd5e system. <br /><br />Heavily inspired by Foundry Community Macros. </p>",
+  "readme": "https://github.com/mspoehr/foundryvtt-macros/blob/main/README.md",
+  "changelog": "https://github.com/mspoehr/foundryvtt-macros/blob/main/CHANGELOG.md",
+  "url": "https://github.com/mspoehr/foundryvtt-macros",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "13.351"
+  },
+  "authors": [
+    {
+      "name": "Michael Spoehr"
+    }
+  ],
+  "flags": {
+    "canUpload": true
+  },
+  "packs": [
+    {
+      "name": "michaels-macros",
+      "label": "Michael's Macros",
+      "path": "packs/michaels-macros",
+      "type": "Macro",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "dnd5e",
+      "flags": {}
+    }
+  ]
+}

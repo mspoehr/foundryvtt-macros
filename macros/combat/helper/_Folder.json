@@ -1,0 +1,23 @@
+{
+  "name": "Helper",
+  "sorting": "a",
+  "folder": "xJgOpbYsfu182O8o",
+  "type": "Macro",
+  "_id": "EW6wVfSMxhsYmyfp",
+  "description": "",
+  "sort": 0,
+  "color": null,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.0.4",
+    "createdTime": 1765900516293,
+    "modifiedTime": 1765900516293,
+    "lastModifiedBy": "pamPl3hysgM6NAjV"
+  },
+  "_key": "!folders!EW6wVfSMxhsYmyfp"
+}

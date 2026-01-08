@@ -1,0 +1,23 @@
+{
+  "name": "General",
+  "sorting": "a",
+  "folder": "9V1Wn9dmwBrRBI3E",
+  "type": "Macro",
+  "_id": "nb6A4Ml6C2bKnmn3",
+  "description": "",
+  "sort": 0,
+  "color": null,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.0.4",
+    "createdTime": 1765900516293,
+    "modifiedTime": 1765900516293,
+    "lastModifiedBy": "pamPl3hysgM6NAjV"
+  },
+  "_key": "!folders!nb6A4Ml6C2bKnmn3"
+}
