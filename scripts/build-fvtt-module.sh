@@ -13,13 +13,13 @@ for folder in $folders; do
   cp "$folder" "build/$folder_filename"
 done
 
-fvtt package -n michaels-macros pack --inputDirectory build --outputDirectory build/packs
+fvtt package --id michaels-modules --type Module -n michaels-macros pack --inputDirectory build --outputDirectory build/packs
 rm build/*.json
 
 MANIFEST_URL="https://github.com/mspoehr/foundryvtt-macros/releases/download/$VERSION/module.json"
 DOWNLOAD_URL="https://github.com/mspoehr/foundryvtt-macros/releases/download/$VERSION/michaels-macros.zip"
 
-jq ". + {\"manifest\": \"$MANIFEST_URL\", \"download\": \"$DOWNLOAD_URL\"}" module.json > build/module.json
+jq ". + {\"version\": \"$VERSION\", \"manifest\": \"$MANIFEST_URL\", \"download\": \"$DOWNLOAD_URL\"}" module.json > build/module.json
 
 cd build
 zip michaels-macros.zip *
